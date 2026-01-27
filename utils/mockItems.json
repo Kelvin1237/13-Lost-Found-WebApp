@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Blue Backpack",
+    "description": "A blue backpack with laptop and books inside",
+    "category": "lost",
+    "lastSeenLocation": "Library, 2nd floor",
+    "foundLocation": null,
+    "claimed": false
+  },
+  {
+    "name": "Black Wallet",
+    "description": "Leather wallet with ID and cash",
+    "category": "found",
+    "lastSeenLocation": null,
+    "foundLocation": "Cafeteria, table 5",
+    "claimed": false
+  },
+  {
+    "name": "Silver Ring",
+    "description": "Small silver ring with a blue stone",
+    "category": "lost",
+    "lastSeenLocation": "Gym locker room",
+    "foundLocation": null,
+    "claimed": false
+  },
+  {
+    "name": "Red Umbrella",
+    "description": "Red umbrella left in the lecture hall",
+    "category": "found",
+    "lastSeenLocation": null,
+    "foundLocation": "Lecture Hall A",
+    "claimed": true
+  },
+  {
+    "name": "Smartphone",
+    "description": "Black iPhone with cracked screen",
+    "category": "lost",
+    "lastSeenLocation": "Cafeteria near entrance",
+    "foundLocation": null,
+    "claimed": false
+  },
+  {
+    "name": "Set of Keys",
+    "description": "House and bike keys with red keychain",
+    "category": "found",
+    "lastSeenLocation": null,
+    "foundLocation": "Parking Lot B",
+    "claimed": false
+  },
+  {
+    "name": "Grey Hoodie",
+    "description": "Grey hoodie with a small hole on the left sleeve",
+    "category": "lost",
+    "lastSeenLocation": "Computer Lab 3",
+    "foundLocation": null,
+    "claimed": false,
+    "createdBy": "64d1c5f6a2c0b1e9f1234573"
+  },
+  {
+    "name": "Green Water Bottle",
+    "description": "Reusable water bottle with 'Eco' sticker",
+    "category": "found",
+    "lastSeenLocation": null,
+    "foundLocation": "Basketball Court",
+    "claimed": false
+  }
+]
