@@ -14,20 +14,32 @@ import {
 } from "../middleware/validationMiddleware.js";
 const router = Router();
 import upload from "../middleware/multerMiddleware.js";
+import { authenticateUser } from "../middleware/authMiddleware.js";
 
 router
   .route("/")
   .get(getAllItems)
-  .post(upload.single("image"), validateItemInput, createItem);
+  .post(
+    authenticateUser,
+    upload.single("image"),
+    validateItemInput,
+    createItem,
+  );
 
-router.route("/my-items").get(getUserItems);
+router.route("/my-items").get(authenticateUser, getUserItems);
 
-router.route("/claim/:id").patch(validateIdParam, claimItem);
+router.route("/claim/:id").patch(authenticateUser, validateIdParam, claimItem);
 
 router
   .route("/:id")
   .get(validateIdParam, getSingleItem)
-  .patch(upload.single("image"), validateIdParam, validateItemInput, updateItem)
-  .delete(validateIdParam, deleteItem);
+  .patch(
+    authenticateUser,
+    upload.single("image"),
+    validateIdParam,
+    validateItemInput,
+    updateItem,
+  )
+  .delete(authenticateUser, validateIdParam, deleteItem);
 
 export default router;
