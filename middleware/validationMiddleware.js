@@ -91,6 +91,11 @@ export const validateRegisterInput = withValidationErrors([
     .withMessage("phone number is required")
     .isMobilePhone("en-GH")
     .withMessage("invalid phone number"),
+
+  body("campusResidence")
+    .trim()
+    .notEmpty()
+    .withMessage("campus residence is required"),
 ]);
 
 export const validateLoginInput = withValidationErrors([
@@ -126,4 +131,9 @@ export const validateUpdateUserInput = withValidationErrors([
     .withMessage("phone number is required")
     .isMobilePhone("en-GH")
     .withMessage("invalid phone number"),
+
+    body("campusResidence")
+    .trim()
+    .notEmpty()
+    .withMessage("campus residence is required"),
 ]);
